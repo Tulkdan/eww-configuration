@@ -1,0 +1,17 @@
+(defvar bright_reveal false)
+(defvar bt_rev false)
+(defvar music_reveal false)
+(defvar net_rev false)
+(defvar time_rev false)
+(defvar vol_reveal false)
+(defvar osd-brightness false)
+(defvar osd-volume false)
+
+(defpoll time :interval "5s" `date +'{"date": "%d/%m", "hour": "%H", "minute": "%M", "day": "%A"}'`)
+
+(deflisten brightness "bash scripts/brightness")
+(deflisten memory "bash scripts/memory")
+(deflisten music "bash scripts/music")
+(deflisten net "bash scripts/net")
+(deflisten volume "bash scripts/volume")
+(deflisten workspaces "bash scripts/workspaces")
