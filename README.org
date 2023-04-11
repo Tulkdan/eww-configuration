@@ -1,0 +1,3 @@
+* EWW Configuration
+
+[[https://github.com/fufexan/dotfiles/tree/main/home/programs/eww][This configurations is totally based on fufexan's configuration, go check on his repo]]
